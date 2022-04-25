@@ -21,10 +21,9 @@ public class MakePipe : MonoBehaviour
         if (timer > timeDiff)
         {
             GameObject newpipe = Instantiate(pipe);
-            newpipe.transform.position = new Vector3(1, Random.Range(-1.7f, 5.7f), 0);
+            newpipe.transform.position = new Vector3(Random.Range(-0.2f, 1.0f), Random.Range(0.7f, 6.9f), 0);
             timer = 0;
             Destroy(newpipe, 10.0f);
         }
-
     }
 }
